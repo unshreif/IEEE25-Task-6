@@ -1,0 +1,88 @@
+div {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    margin: -0.5vw;
+    padding: 0;
+    text-align: center;
+}
+h2{
+    position: absolute;
+    font-size: 3vw;
+    font-family: Arial;
+    color: white;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+
+}
+
+
+.forest {
+    background-image: url('./images/forest.webp');
+}
+
+.desert {
+    background-image: url('./images/desert.jpeg');
+}
+
+.canyon {
+    background-image: url('./images/canyon.webp');
+}
+
+.Glasier {
+    background-image: url('./images/glasier.jpeg');
+}
+
+.forest h2 {
+    animation: fadeIn 3s ease-in-out infinite alternate;
+}
+
+.desert h2 {
+    animation: rotate 4s ease-in-out infinite alternate;
+}
+
+.canyon h2 {
+    animation: bounce 2s ease-in-out infinite alternate;
+}
+
+.Glasier h2 {
+    animation: zoomInOut 5s ease-in-out infinite alternate;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes zoomInOut {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+    }
+}
